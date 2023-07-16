@@ -4,9 +4,8 @@ import SparkMD5 from "spark-md5";
 
 const publicKey = "84ba4923e28d71a6d15697ef6cbf41c5";
 const privateKey = "58a062859b51b990a9851925260e317c1a9dfe73";
-const imageLimit = 9; // Number of images to fetch
-const totalCharacters = 1493; // Total number of characters available in the Marvel API (update this if needed)
-
+const imageLimit = 9; 
+const totalCharacters = 1493; 
 export async function fetchImagesFromMarvelAPI(): Promise<Image[]> {
   try {
     const offset = getRandomOffset(totalCharacters);

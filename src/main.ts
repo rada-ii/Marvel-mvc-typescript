@@ -10,13 +10,13 @@ function initializeApp(): void {
   button.addEventListener("click", async () => {
     try {
       clearImages();
-      button.disabled = true;
+      button.setAttribute("disabled", "");
       const images = await fetchImagesFromMarvelAPI();
       renderImages(images);
     } catch (error) {
       console.error("Error initializing app:", error);
     } finally {
-      button.disabled = false;
+      button.removeAttribute("disabled");
     }
   });
 }

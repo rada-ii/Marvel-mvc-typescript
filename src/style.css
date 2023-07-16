@@ -10,6 +10,12 @@ button {
   border-radius: 3rem;
   background-color: #f893c5;
   border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f893d9;
+  color: #fff;
+  transition: all 0.2s;
 }
 
 #image-container {
